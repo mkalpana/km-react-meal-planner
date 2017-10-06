@@ -109,11 +109,14 @@ class App extends Component {
                     {meals[meal]
                       ? <div className='food-item'>
                         <img src={meals[meal].image} alt={meals[meal].label}/>
+                        <span title={meals[meal].label}>{meals[meal].label}</span>
                         <button onClick={() => remove({meal, day})}>Clear</button>
                       </div>
-                      : <button onClick={() => this.openFoodModal({meal, day})} className='icon-btn'>
-                        <CalendarIcon size={30}/>
-                      </button>}
+                      : <div className='add-meal-btn'>
+                        <button onClick={() => this.openFoodModal({meal, day})} className='icon-btn'>
+                          <CalendarIcon size={30}/>
+                        </button>
+                      </div>}
                   </li>
                 ))}
               </ul>

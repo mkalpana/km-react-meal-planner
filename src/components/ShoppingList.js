@@ -14,7 +14,7 @@ const ShoppingList = ({ list }) => {
           </li>
         ))}
       </ul>
-      {(!list || list.length === 0) && <div>No meals found. Please add meal to your Meal Planner.</div>}
+      {(!list || list.length === 0) && <div>No meal found. Please add meal to your Meal Planner.</div>}
     </div>
   )
 };

@@ -14,9 +14,7 @@ li {
 
 .container {
   margin: 0 auto;
-  max-width: 1070px;
-  padding: 20px;
-  min-width: 1070px;
+  width: 1070px;
 }
 
 .header {
@@ -30,28 +28,51 @@ li {
   font-weight: 300;
 }
 
-.icon-btn {
+.icon-btn, .add-meal-btn {
   background: none;
   border: none;
+  border-radius: 2px;
+}
+
+.icon-btn:hover, .icon-btn:focus, .icon-btn:active {
+  background: #D3D3D3;
+  outline: 0;
+}
+
+.add-meal-btn {
+  width: 50px;
+  margin: 0 auto;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
+  background-color: #f5f5f5;
+  padding: 0 20px;
+  height: 120px;
 }
 
 .shopping-list {
   background: none;
   font-size: 18px;
+  font-weight: 600;
   border: none;
-  text-decoration: underline;
   cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+.shopping-list:hover, .shopping-list:focus, .shopping-list:active {
+  background: #D3D3D3;
+  outline: 0;
 }
 
 .calendar {
   margin-top: 0;
   display: flex;
+  padding: 0 20px;
 }
 
 .icon-grid ul {
@@ -69,6 +90,7 @@ li {
   justify-content: space-around;
   margin: 0;
   margin-left: 152px;
+  padding: 0 20px;
 }
 
 .meal {
@@ -76,7 +98,7 @@ li {
   display: flex;
   flex-direction: column;
   height: 150px;
-  width: 100px;
+  width: 160px;
   justify-content: center;
 }
 
@@ -167,7 +189,7 @@ li {
 }
 
 .ingredients-list li {
-  font-size: 24px;
+  font-size: 16px;
   padding: 5px;
 }
 
@@ -182,6 +204,15 @@ li {
   width: 100px;
   height: 100px;
   border-radius: 3px;
+}
+
+.food-item span {
+  font-size: 16px;
+  display: inline-block;
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .food-item button {

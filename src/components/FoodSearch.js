@@ -22,6 +22,7 @@ const FoodSearch = ({ isLoading, selectRecipe, onInputChange, searchFood, food, 
                 placeholder='Search Foods'
                 onChange={onInputChange}
                 onKeyDown={(e) => e.key === 'Enter' && searchFood(e)}
+                autoFocus
               />
               <button
                 className='icon-btn'
