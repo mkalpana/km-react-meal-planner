@@ -14,10 +14,13 @@ The application requires the following software to be installed locally.
 
 1. Clone this git repository using `git clone git@github.com:mkalpana/km-react-meal-planner.git`
 2. Install the dependencies using `npm install`
-3. Create a Receipe Search API App in Edamam and replace the App ID and App Key in `.env` file.
-4. Run `npm start` to run the application in development mode.
+3. Run `npm start` to run the application in development mode.
 
 
 ## Building production assets.
 
 Use the command `npm run build` to generate production assets for deploying to a http server. The production assets are generated in the `/build` folder.
+
+## Note:
+
+If the search fails, the Edamam's Recipe Search API limits have been reached. Try again after sometime.
