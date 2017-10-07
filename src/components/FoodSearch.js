@@ -52,7 +52,7 @@ FoodSearch.propTypes = {
   selectRecipe: PropTypes.func,
   onInputChange: PropTypes.func,
   searchFood: PropTypes.func,
-  food: PropTypes.object,
+  food: PropTypes.array,
   day: PropTypes.string,
   meal: PropTypes.string,
   onClose: PropTypes.func,
