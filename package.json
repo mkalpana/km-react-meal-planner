@@ -2,6 +2,7 @@
   "name": "km-react-meal-planner",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mkalpana.github.io/km-react-meal-planner",
   "dependencies": {
     "lodash": "^4.17.4",
     "react": "^15.6.1",
